@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Status | Little Steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🌸 Little <span>Steps</span></div>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="caregivers.html">Caregivers</a>
+        <a href="emergency.html">SOS</a>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <div class="page-heading">
+        <span class="badge">📍 Live Care Status</span>
+        <h1>Aarav's Care Session</h1>
+        <p>Monitor the current childcare session.</p>
+    </div>
+
+    <div class="status-card">
+
+        <div class="live-indicator">
+            <span></span> LIVE
+        </div>
+
+        <div class="status-caregiver">
+            <div class="large-avatar">👩🏻</div>
+
+            <div>
+                <h2>Priya Sharma</h2>
+                <p>Verified Caregiver</p>
+                <div class="rating">★★★★★ 4.9</div>
+            </div>
+        </div>
+
+        <div class="progress-container">
+
+            <div class="progress-label">
+                <span>Care Started</span>
+                <strong>6:00 PM</strong>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+
+            <div class="progress-label">
+                <span>Expected End</span>
+                <strong>10:00 PM</strong>
+            </div>
+
+        </div>
+
+        <div class="care-status-grid">
+
+            <div>
+                <span>🟢</span>
+                <strong>Active</strong>
+                <small>Current Status</small>
+            </div>
+
+            <div>
+                <span>👶</span>
+                <strong>Aarav</strong>
+                <small>Child</small>
+            </div>
+
+            <div>
+                <span>🕐</span>
+                <strong>2h 15m</strong>
+                <small>Duration</small>
+            </div>
+
+            <div>
+                <span>📍</span>
+                <strong>On Site</strong>
+                <small>Location Status</small>
+            </div>
+
+        </div>
+
+        <div class="status-actions">
+            <button onclick="contactCaregiver()" class="btn">📞 Contact Caregiver</button>
+            <a href="emergency.html" class="btn emergency-btn">🚨 Emergency SOS</a>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

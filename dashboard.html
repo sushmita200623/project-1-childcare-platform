@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Little Steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="dashboard-nav">
+    <div class="logo">🌸 Little <span>Steps</span></div>
+
+    <div class="nav-actions">
+        <a href="notifications.html">🔔</a>
+        <a href="emergency.html" class="sos-small">SOS</a>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+        <a class="active" href="dashboard.html">🏠 Dashboard</a>
+        <a href="child-profile.html">👶 Child Profile</a>
+        <a href="caregivers.html">🧑‍🍼 Caregivers</a>
+        <a href="booking.html">📅 Book Childcare</a>
+        <a href="care-status.html">📍 Care Status</a>
+        <a href="payment.html">💳 Payments</a>
+        <a href="notifications.html">🔔 Notifications</a>
+        <a href="reviews.html">⭐ Reviews</a>
+        <a href="emergency.html">🚨 Emergency SOS</a>
+        <a href="admin.html">⚙️ Admin Panel</a>
+    </aside>
+
+    <main class="dashboard-main">
+
+        <div class="welcome">
+            <div>
+                <span class="badge">Good Evening 👋</span>
+                <h1>Welcome to Little Steps!</h1>
+                <p>Manage your child's care from one place.</p>
+            </div>
+
+            <a href="booking.html" class="btn">+ New Booking</a>
+        </div>
+
+        <div class="stat-grid">
+
+            <div class="dashboard-stat">
+                <span>👶</span>
+                <div>
+                    <h3>1</h3>
+                    <p>Child Profile</p>
+                </div>
+            </div>
+
+            <div class="dashboard-stat">
+                <span>📅</span>
+                <div>
+                    <h3>2</h3>
+                    <p>Upcoming Bookings</p>
+                </div>
+            </div>
+
+            <div class="dashboard-stat">
+                <span>🧑‍🍼</span>
+                <div>
+                    <h3>1</h3>
+                    <p>Active Caregiver</p>
+                </div>
+            </div>
+
+            <div class="dashboard-stat">
+                <span>💳</span>
+                <div>
+                    <h3>₹2,500</h3>
+                    <p>Total Spent</p>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="dashboard-section">
+
+            <div class="section-header">
+                <h2>Active Care Session</h2>
+                <a href="care-status.html">View Details →</a>
+            </div>
+
+            <div class="care-session">
+
+                <div class="caregiver-avatar">👩🏻</div>
+
+                <div class="session-info">
+                    <h3>Priya Sharma</h3>
+                    <p>🟢 Currently caring for Aarav</p>
+                    <small>Started at 6:00 PM • Ends at 10:00 PM</small>
+                </div>
+
+                <span class="status active-status">Active</span>
+            </div>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <div class="section-header">
+                <h2>Quick Actions</h2>
+            </div>
+
+            <div class="quick-grid">
+
+                <a href="caregivers.html" class="quick-card">
+                    <span>🧑‍🍼</span>
+                    <h3>Find Caregiver</h3>
+                    <p>Browse trusted caregivers</p>
+                </a>
+
+                <a href="child-profile.html" class="quick-card">
+                    <span>👶</span>
+                    <h3>Child Profile</h3>
+                    <p>Manage child information</p>
+                </a>
+
+                <a href="booking.html" class="quick-card">
+                    <span>📅</span>
+                    <h3>Book Care</h3>
+                    <p>Schedule childcare</p>
+                </a>
+
+                <a href="emergency.html" class="quick-card emergency-card">
+                    <span>🚨</span>
+                    <h3>Emergency SOS</h3>
+                    <p>Get emergency assistance</p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="dashboard-section">
+
+            <div class="section-header">
+                <h2>Upcoming Bookings</h2>
+                <a href="booking.html">View All →</a>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Caregiver</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Service</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>👩 Priya Sharma</td>
+                            <td>12 Sep 2026</td>
+                            <td>6 PM - 10 PM</td>
+                            <td>Baby Care</td>
+                            <td><span class="status confirmed">Confirmed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>👩 Neha Verma</td>
+                            <td>15 Sep 2026</td>
+                            <td>9 AM - 2 PM</td>
+                            <td>Kids Care</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

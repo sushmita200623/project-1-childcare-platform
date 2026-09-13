@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | Little Steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🌸 Little <span>Steps</span></div>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="booking.html">Booking</a>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <div class="page-heading">
+        <span class="badge">💳 Secure Demo Payment</span>
+        <h1>Payment</h1>
+        <p>Complete your childcare booking.</p>
+    </div>
+
+    <div class="payment-layout">
+
+        <div class="form-card">
+
+            <h2>Select Payment Method</h2>
+
+            <div class="payment-options">
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="upi" checked>
+                    <span>📱</span>
+                    <div>
+                        <strong>UPI</strong>
+                        <small>Google Pay / PhonePe / Paytm</small>
+                    </div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="card">
+                    <span>💳</span>
+                    <div>
+                        <strong>Card</strong>
+                        <small>Credit / Debit Card</small>
+                    </div>
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="cash">
+                    <span>💵</span>
+                    <div>
+                        <strong>Cash</strong>
+                        <small>Pay after service</small>
+                    </div>
+                </label>
+
+            </div>
+
+            <button onclick="makePayment()" class="btn full">
+                Confirm Demo Payment
+            </button>
+
+        </div>
+
+        <div class="payment-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+                <span>Childcare Service</span>
+                <strong>Baby Care</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Caregiver</span>
+                <strong>Priya Sharma</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Duration</span>
+                <strong>4 Hours</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Service Fee</span>
+                <strong>₹1,200</strong>
+            </div>
+
+            <hr>
+
+            <div class="summary-total">
+                <span>Total</span>
+                <strong>₹1,200</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caregivers | Little Steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🌸 Little <span>Steps</span></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="child-profile.html">Child</a>
+        <a href="booking.html">Booking</a>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <div class="page-heading">
+        <span class="badge">🧑‍🍼 Trusted Professionals</span>
+        <h1>Find Your Perfect Caregiver</h1>
+        <p>Choose from experienced childcare professionals.</p>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="caregiverSearch"
+               placeholder="🔍 Search caregiver by name or service..."
+               onkeyup="searchCaregivers()">
+
+        <select id="ratingFilter" onchange="filterCaregivers()">
+            <option value="all">All Ratings</option>
+            <option value="4.5">4.5+ Rating</option>
+            <option value="4.8">4.8+ Rating</option>
+        </select>
+
+        <select id="serviceFilter" onchange="filterCaregivers()">
+            <option value="all">All Services</option>
+            <option value="baby">Baby Care</option>
+            <option value="kids">Kids Care</option>
+            <option value="night">Night Care</option>
+        </select>
+    </div>
+
+    <div class="caregiver-grid" id="caregiverGrid">
+
+        <div class="caregiver-card"
+             data-name="priya sharma"
+             data-rating="4.9"
+             data-service="baby night">
+
+            <div class="caregiver-photo">👩🏻</div>
+            <span class="available">● Available</span>
+
+            <h3>Priya Sharma</h3>
+            <p>🧑‍🍼 Professional Babysitter</p>
+
+            <div class="rating">★★★★★ <b>4.9</b></div>
+
+            <div class="caregiver-details">
+                <span>🎓 5 Years Experience</span>
+                <span>🌙 Night Care</span>
+                <span>👶 Baby Care</span>
+            </div>
+
+            <div class="price">₹300 <small>/ hour</small></div>
+
+            <div class="card-buttons">
+                <a href="caregiver-profile.html" class="btn">View Profile</a>
+                <a href="booking.html" class="btn secondary">Book</a>
+            </div>
+        </div>
+
+        <div class="caregiver-card"
+             data-name="neha verma"
+             data-rating="4.8"
+             data-service="kids">
+
+            <div class="caregiver-photo">👩🏼</div>
+            <span class="available">● Available</span>
+
+            <h3>Neha Verma</h3>
+            <p>🧑‍🏫 Childcare Specialist</p>
+
+            <div class="rating">★★★★★ <b>4.8</b></div>
+
+            <div class="caregiver-details">
+                <span>🎓 4 Years Experience</span>
+                <span>🧒 Kids Care</span>
+                <span>🎨 Activity Care</span>
+            </div>
+
+            <div class="price">₹250 <small>/ hour</small></div>
+
+            <div class="card-buttons">
+                <a href="caregiver-profile.html" class="btn">View Profile</a>
+                <a href="booking.html" class="btn secondary">Book</a>
+            </div>
+        </div>
+
+        <div class="caregiver-card"
+             data-name="anjali mehta"
+             data-rating="4.7"
+             data-service="baby">
+
+            <div class="caregiver-photo">👩🏽</div>
+            <span class="available">● Available</span>
+
+            <h3>Anjali Mehta</h3>
+            <p>🧸 Infant Care Expert</p>
+
+            <div class="rating">★★★★★ <b>4.7</b></div>
+
+            <div class="caregiver-details">
+                <span>🎓 6 Years Experience</span>
+                <span>👶 Infant Care</span>
+                <span>🍎 Meal Care</span>
+            </div>
+
+            <div class="price">₹280 <small>/ hour</small></div>
+
+            <div class="card-buttons">
+                <a href="caregiver-profile.html" class="btn">View Profile</a>
+                <a href="booking.html" class="btn secondary">Book</a>
+            </div>
+        </div>
+
+        <div class="caregiver-card"
+             data-name="simran kapoor"
+             data-rating="4.6"
+             data-service="night kids">
+
+            <div class="caregiver-photo">👩🏾</div>
+            <span class="available">● Available</span>
+
+            <h3>Simran Kapoor</h3>
+            <p>🌙 Night Care Specialist</p>
+
+            <div class="rating">★★★★★ <b>4.6</b></div>
+
+            <div class="caregiver-details">
+                <span>🎓 7 Years Experience</span>
+                <span>🌙 Night Care</span>
+                <span>🧒 Kids Care</span>
+            </div>
+
+            <div class="price">₹320 <small>/ hour</small></div>
+
+            <div class="card-buttons">
+                <a href="caregiver-profile.html" class="btn">View Profile</a>
+                <a href="booking.html" class="btn secondary">Book</a>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

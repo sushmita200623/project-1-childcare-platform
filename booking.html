@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Childcare | Little Steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🌸 Little <span>Steps</span></div>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="caregivers.html">Caregivers</a>
+        <a href="child-profile.html">Child Profile</a>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <div class="page-heading">
+        <span class="badge">📅 24×7 Booking</span>
+        <h1>Book Childcare</h1>
+        <p>Schedule trusted childcare according to your needs.</p>
+    </div>
+
+    <div class="booking-layout">
+
+        <div class="form-card">
+
+            <form id="bookingForm">
+
+                <div class="form-group">
+                    <label>Select Child</label>
+                    <select id="bookingChild" required>
+                        <option>Aarav Sharma</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Caregiver</label>
+                    <select id="caregiver" required>
+                        <option value="300">Priya Sharma - ₹300/hour</option>
+                        <option value="250">Neha Verma - ₹250/hour</option>
+                        <option value="280">Anjali Mehta - ₹280/hour</option>
+                        <option value="320">Simran Kapoor - ₹320/hour</option>
+                    </select>
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" id="bookingDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Start Time</label>
+                        <input type="time" id="startTime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>End Time</label>
+                        <input type="time" id="endTime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Service</label>
+                        <select id="service">
+                            <option>Baby Care</option>
+                            <option>Kids Care</option>
+                            <option>Night Care</option>
+                            <option>Emergency Care</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Additional Instructions</label>
+                    <textarea id="bookingNotes"
+                              placeholder="Any special instructions..."></textarea>
+                </div>
+
+                <button type="submit" class="btn full">Continue to Payment →</button>
+
+            </form>
+
+        </div>
+
+        <div class="booking-summary">
+
+            <h2>Booking Summary</h2>
+
+            <div class="summary-row">
+                <span>Caregiver</span>
+                <strong id="summaryCaregiver">Priya Sharma</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Service</span>
+                <strong id="summaryService">Baby Care</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Hourly Rate</span>
+                <strong id="summaryRate">₹300</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Estimated Hours</span>
+                <strong id="summaryHours">1</strong>
+            </div>
+
+            <hr>
+
+            <div class="summary-total">
+                <span>Total</span>
+                <strong id="summaryTotal">₹300</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

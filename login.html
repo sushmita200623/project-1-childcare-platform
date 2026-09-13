@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Little Steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+
+<div class="auth-container">
+
+    <div class="auth-brand">
+        <div class="logo">🌸 Little <span>Steps</span></div>
+        <h1>Welcome Back!</h1>
+        <p>Let's take another little step toward safer childcare.</p>
+
+        <div class="auth-illustration">👨‍👩‍👧</div>
+    </div>
+
+    <div class="auth-box">
+        <h2>Login</h2>
+        <p class="muted">Access your Little Steps account</p>
+
+        <form id="loginForm">
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+
+            <div class="remember">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn full">Login</button>
+        </form>
+
+        <div class="divider">OR</div>
+
+        <button class="social-btn" onclick="demoLogin()">Continue as Demo User</button>
+
+        <p class="auth-bottom">
+            Don't have an account?
+            <a href="#" onclick="demoLogin()">Create Account</a>
+        </p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

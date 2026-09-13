@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | Little Steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="dashboard-nav">
+    <div class="logo">🌸 Little <span>Steps</span> <small>Admin</small></div>
+
+    <div class="nav-actions">
+        <a href="dashboard.html">User Dashboard</a>
+        <button onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+        <a class="active" href="admin.html">📊 Overview</a>
+        <a href="#parents">👨‍👩‍👧 Parents</a>
+        <a href="#caregivers">🧑‍🍼 Caregivers</a>
+        <a href="#bookings">📅 Bookings</a>
+        <a href="#payments">💳 Payments</a>
+        <a href="#emergency">🚨 Emergency Alerts</a>
+        <a href="#reviews">⭐ Reviews</a>
+    </aside>
+
+    <main class="dashboard-main">
+
+        <div class="welcome">
+            <div>
+                <span class="badge">⚙️ Administration</span>
+                <h1>Admin Dashboard</h1>
+                <p>Manage Little Steps childcare platform.</p>
+            </div>
+        </div>
+
+        <div class="stat-grid">
+
+            <div class="dashboard-stat">
+                <span>👨‍👩‍👧</span>
+                <div>
+                    <h3>248</h3>
+                    <p>Total Parents</p>
+                </div>
+            </div>
+
+            <div class="dashboard-stat">
+                <span>🧑‍🍼</span>
+                <div>
+                    <h3>86</h3>
+                    <p>Caregivers</p>
+                </div>
+            </div>
+
+            <div class="dashboard-stat">
+                <span>📅</span>
+                <div>
+                    <h3>124</h3>
+                    <p>Total Bookings</p>
+                </div>
+            </div>
+
+            <div class="dashboard-stat">
+                <span>💰</span>
+                <div>
+                    <h3>₹1.8L</h3>
+                    <p>Revenue</p>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="dashboard-section" id="bookings">
+
+            <div class="section-header">
+                <h2>Recent Bookings</h2>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Parent</th>
+                            <th>Caregiver</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#LS1001</td>
+                            <td>Riya Sharma</td>
+                            <td>Priya Sharma</td>
+                            <td>10 Sep 2026</td>
+                            <td>₹1,200</td>
+                            <td><span class="status confirmed">Confirmed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#LS1002</td>
+                            <td>Megha Gupta</td>
+                            <td>Neha Verma</td>
+                            <td>11 Sep 2026</td>
+                            <td>₹1,000</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#LS1003</td>
+                            <td>Ankit Singh</td>
+                            <td>Anjali Mehta</td>
+                            <td>12 Sep 2026</td>
+                            <td>₹1,400</td>
+                            <td><span class="status confirmed">Confirmed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <section class="dashboard-section" id="emergency">
+
+            <div class="section-header">
+                <h2>Emergency Alerts</h2>
+            </div>
+
+            <div class="alert-box">
+                🚨 <strong>2 Emergency Alerts</strong>
+                <span>Require attention</span>
+                <button onclick="resolveAlerts()">Resolve</button>
+            </div>
+
+        </section>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

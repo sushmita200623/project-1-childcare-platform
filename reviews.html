@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | Little Steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🌸 Little <span>Steps</span></div>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="caregivers.html">Caregivers</a>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <div class="page-heading">
+        <span class="badge">⭐ Parent Feedback</span>
+        <h1>Reviews & Ratings</h1>
+        <p>Share your childcare experience.</p>
+    </div>
+
+    <div class="form-card">
+
+        <h2>Rate Priya Sharma</h2>
+
+        <div class="star-rating" id="starRating">
+            <span onclick="selectStar(1)">★</span>
+            <span onclick="selectStar(2)">★</span>
+            <span onclick="selectStar(3)">★</span>
+            <span onclick="selectStar(4)">★</span>
+            <span onclick="selectStar(5)">★</span>
+        </div>
+
+        <p id="ratingText">Select a rating</p>
+
+        <textarea id="reviewText"
+                  placeholder="Write your review..."></textarea>
+
+        <button onclick="submitReview()" class="btn">
+            Submit Review
+        </button>
+
+        <div id="reviewMessage" class="success-message"></div>
+
+    </div>
+
+    <div class="reviews-section">
+
+        <div class="review-item">
+            <strong>Riya K.</strong>
+            <span class="rating">★★★★★</span>
+            <p>Priya was very caring and responsible.</p>
+        </div>
+
+        <div class="review-item">
+            <strong>Megha S.</strong>
+            <span class="rating">★★★★☆</span>
+            <p>Good experience and friendly service.</p>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
